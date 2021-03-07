@@ -7,12 +7,12 @@ library(nnet)
 library(RWeka) # для другой задачи
 
 # устанавливаем рабочую директорию для сохранения
-setwd('~/r/NeuralNetR')
+setwd('EveMelo/NeuralNet')
 getwd()
 
 # загружаем данные из рабочей дирректории
 
-mydata = read.csv('RestaurantTips.csv', sep = ';', header = T)
+mydata = read.csv('Restaurant.csv', sep = ';', header = T)
 mydata
 
 # Обращаемся к нашей таблице напрямую
