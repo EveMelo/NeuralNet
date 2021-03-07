@@ -2,7 +2,7 @@
 getwd()
 install.packages('neuralnet')
 # подключаем пакет нейронных сетей
-####setwd("/Users/mishkail/r/NeuralNetR")
+setwd("EveMelo/NeuralNet")
 library('neuralnet')
 list.files()
 # обращаемся к нашему файлу с данными
