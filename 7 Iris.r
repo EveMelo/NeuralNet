@@ -120,14 +120,30 @@ plotROC(predictions[,2], iris$targetsTest[,2])
 confusionMatrix(iris$targetsTrain, encodeClassLabels(fitted.values(model),
                                                      method = "402040", l=0.4, h=0.6))
 
-
+##THIS UP ON ME - CHECK IT AGAIN
 library(NeuralNetTools)
 par(mfrow = c(1,1))
 plotnet(model)
 
 
+##NEW LIBRARY - UPDATE R 4.0.3
+install.packages('RCurl')
+install.packages('bitops')
+install.packages('rjson')
+install.packages('jsonlite')
+install.packages('statmod')
+install.packages('tools')
+library('RCurl')
+library('bitops')
+library('rjson')
+library('jsonlite')
+library('statmod')
+library('tools')
 
+install.packages('h2o')
+library(h2o)
 
+c1 <- h2o.init(max_mem_size = '2G', nthreads=2, ip ='localhost', port=54321)
 
 
 
